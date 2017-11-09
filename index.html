@@ -8,6 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/custom.css" media="screen">
   </head>
   <body>
     <section class="page-header">
@@ -35,6 +36,32 @@
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
 <p>You can @mention a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<!-- start map -->
+<h3>Where you can find me</h3>
+<div id="map"></div>
+<script>
+  function initMap() {
+    var uluru = {lat: -6.172383, lng: 106.8718523};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 17,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkIrcY9_dX-KQCtJzi9pM7NAnrat1qcAk&callback=initMap">
+</script>
+<!-- end map -->
+
+<h3>Sample Artwork</h3>
+<div id="generic-img-div">
+<center><img src="https://i.pximg.net/c/600x600/img-master/img/2017/08/13/21/55/38/64397477_p0_master1200.jpg" width="50%" height="50%"></center>
+</div>
 
 <h3>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
